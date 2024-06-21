@@ -28,6 +28,21 @@ body {
     font-size: 1rem;
     line-height: 1.5;
   }
+
+  .text-paginate {
+    display: inline-block;
+    padding: 0 0.75rem;
+    height: fit-content;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .text-paginate:hover {
+    --tw-text-opacity: 1;
+    color: rgb(8 145 178 / var(--tw-text-opacity));
+  }
 }
 
 @layer components {

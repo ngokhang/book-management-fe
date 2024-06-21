@@ -26,7 +26,7 @@ const LoginForm: React.FunctionComponent<ILoginFormProps> = (props) => {
   });
 
   return (
-    <form className="w-full sm:w-[24rem] flex flex-col px-4 py-8 justify-center bg-white rounded shadow">
+    <form className="w-full sm:w-[24rem] h-[500px] flex flex-col px-4 py-2 justify-center bg-white rounded shadow">
       <div className="text-black text-2xl font-bold text-center my-4">
         <span>Login</span>
       </div>

@@ -4,6 +4,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { GlobalStoreProvider } from "@/providers/global-store-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -25,7 +26,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={poppins.variable}>{children}</body>
+      <body
+        className={`${poppins.variable} h-[100vh] overflow-y-auto overflow-x-hidden`}
+      >
+        <GlobalStoreProvider>{children}</GlobalStoreProvider>
+      </body>
     </html>
   );
 }

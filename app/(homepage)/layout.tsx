@@ -14,11 +14,5 @@ export default function HomepageLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <div className="container">
-      <Header />
-      {children}
-      <Footer />
-    </div>
-  );
+  return <div className="container">{children}</div>;
 }

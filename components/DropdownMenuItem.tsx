@@ -10,8 +10,10 @@ interface IDropdownMenuItemProps {
 
 const DropdownMenuItem: React.FC<IDropdownMenuItemProps> = ({ name, path }) => {
   return (
-    <li className="p-2 hover:bg-slate-400 hover:text-white transition-colors">
-      <Link href={path || "#"}>{name}</Link>
+    <li className=" hover:bg-slate-400 hover:text-white transition-colors">
+      <Link href={path || "#"} className="block w-full h-full p-2">
+        {name}
+      </Link>
     </li>
   );
 };

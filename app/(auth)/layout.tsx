@@ -21,12 +21,12 @@ export default function AuthLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${poppins.variable}`}>
-        <section className="bg-[#CDEAFB] w-full h-[100vh] flex justify-center items-center">
-          {children}
-        </section>
-      </body>
-    </html>
+    // <html lang="en">
+    //   <body className={`${poppins.variable}`}>
+    <section className="bg-[#CDEAFB] w-full h-[100vh] flex justify-center items-center overflow-y-auto overflow-x-auto">
+      {children}
+    </section>
+    //   </body>
+    // </html>
   );
 }

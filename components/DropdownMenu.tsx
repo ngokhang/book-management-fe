@@ -11,9 +11,7 @@ interface IDropdownMenuProps {
 const DropdownMenu: React.FC<IDropdownMenuProps> = ({ itemList, width }) => {
   return (
     <ul
-      className={`hidden group-hover/bookDropdownMenu:block absolute left-0 w-[${
-        width || "150px"
-      }] border rounded shadow-md`}
+      className={`hidden group-hover/bookDropdownMenu:block absolute left-0 w-[${width}] border rounded shadow-md`}
       role="menu"
       aria-orientation="vertical"
     >

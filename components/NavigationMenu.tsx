@@ -26,9 +26,9 @@ const NavigationMenu: React.FunctionComponent<INavigationMenuProps> = (
     <nav className="hidden md:flex gap-4">
       <span className="group/bookDropdownMenu relative text-base text-black">
         <span>Books</span>
-        <DropdownMenu itemList={BookDropdownItem} />
+        <DropdownMenu itemList={BookDropdownItem} width="200px" />
       </span>
-      <Link href={"/support"} className="text-base text-black">
+      <Link href={"/support"} className="block text-base text-black">
         Support
       </Link>
       <Link href={"/login"} className="text-base text-black">
